@@ -1,0 +1,44 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+import Files.Options;
+import Files.Quiz;
+
+public class Main {
+   public Main() {
+   }
+
+   public static void main(String[] var0) {
+      boolean var1 = true;
+
+      while(var1) {
+         System.out.println();
+         System.out.println("Welcome to Audio Nerds where you can learn topics audio related");
+         System.out.println("--------------------------------------");
+         System.out.println("1) Mixing ");
+         System.out.println("2) Mastering ");
+         System.out.println("3) Quiz yourself");
+         System.out.println("4) Leave indefinitly");
+         System.out.println();
+         System.out.println("Please choose an option ");
+         System.out.println();
+         int var2 = Options.scanner.nextInt();
+         switch (var2) {
+            case 1:
+               (new Mixing()).Start();
+               break;
+            case 2:
+               (new Mastering()).Start();
+               break;
+            case 3:
+               (new Quiz()).Start();
+               break;
+            case 4:
+               System.out.println("Come Back Next Time !!!");
+               var1 = false;
+               break;
+            default:
+               System.out.println("Please choose an option listed");
+         }
+      }
+
+   }
+}

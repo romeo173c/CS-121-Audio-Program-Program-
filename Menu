@@ -1,0 +1,28 @@
+
+public class Menu {
+    public static void main (String [] args)
+{
+
+    int chocie = 2;
+    String choiceString;
+
+    switch(chocie) {
+
+        case 1: "Hello, Welcome to Audio Nerds whhere you can learn basic methods/apporaches when it comes to audio enginnering in music. Please select one of the options down below to learn more"
+            break;
+
+        case 2:
+            choiceString = "Mixing"
+            break;
+
+        case 3:
+            choiceString = "Mastering"
+
+        default:
+            choiceString = "Please choose a vaild option"
+
+    }
+        System.out.println(choiceString);
+
+    }
+}
